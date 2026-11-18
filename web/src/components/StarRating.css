@@ -1,0 +1,26 @@
+.stars {
+  display: flex;
+  align-items: center;
+  gap: 1px;
+}
+
+.star {
+  position: relative;
+  display: inline-block;
+  color: #524b44;
+  font-size: 11px;
+  line-height: 1;
+}
+
+.star-fill {
+  position: absolute;
+  inset: 0 auto 0 0;
+  overflow: hidden;
+  color: var(--yellow);
+}
+
+.rating-number {
+  margin-left: 5px;
+  color: var(--muted);
+  font-size: 10px;
+}

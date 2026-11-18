@@ -1,0 +1,57 @@
+.site-header {
+  height: 86px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: var(--on-yellow);
+  background: var(--yellow);
+  /* Stretches the yellow band to the screen edges */
+  box-shadow: 0 0 0 100vmax var(--yellow);
+  clip-path: inset(0 -100vmax);
+}
+
+.wordmark {
+  color: var(--on-yellow);
+  font-size: 28px;
+  line-height: 1;
+  letter-spacing: -0.04em;
+  text-decoration: none;
+}
+
+.profile-button {
+  display: grid;
+  width: 38px;
+  height: 38px;
+  place-items: center;
+  color: var(--on-yellow);
+  border: 1px solid rgba(17, 16, 16, 0.5);
+  border-radius: 50%;
+  background: rgba(17, 16, 16, 0.06);
+  transition:
+    background 180ms ease,
+    transform 180ms ease;
+}
+
+.profile-button:hover {
+  background: rgba(17, 16, 16, 0.14);
+  transform: translateY(-1px);
+}
+
+.profile-button svg {
+  width: 20px;
+  fill: none;
+  stroke: currentColor;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 1.6;
+}
+
+@media (min-width: 900px) {
+  .site-header {
+    height: 104px;
+  }
+
+  .wordmark {
+    font-size: 32px;
+  }
+}
